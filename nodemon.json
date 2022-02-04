@@ -1,0 +1,7 @@
+{
+    "env": {
+        "DB_USER": "dombub1",
+        "DB_PASSWORD": "dombub1",
+        "DB_NAME": "travels"
+    }
+}

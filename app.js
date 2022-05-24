@@ -28,6 +28,7 @@ app.use(UserRoute);
 
 app.use(PlaceRoute);
 
-mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.4afhm.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
+
+mongoose.connect(`mongodb+srv://dombub1:dombub1@cluster0.4afhm.mongodb.net/travels?retryWrites=true&w=majority`)
 .then(app.listen(process.env.PORT || 5000))
 .catch(err => console.log("connecting mongoose returns an error: ", err));

@@ -29,9 +29,16 @@ app.use(UserRoute)
 
 app.use(PlaceRoute)
 
+<<<<<<< HEAD
 mongoose
   .connect(
     `mongodb+srv://dombub1:dombub1@cluster0.4afhm.mongodb.net/travels?retryWrites=true&w=majority`
   )
   .then(app.listen(process.env.PORT || 5000))
   .catch((err) => console.log('connecting mongoose returns an error: ', err))
+=======
+
+mongoose.connect(`mongodb+srv://dombub1:dombub1@cluster0.4afhm.mongodb.net/travels?retryWrites=true&w=majority`)
+.then(app.listen(process.env.PORT || 5000))
+.catch(err => console.log("connecting mongoose returns an error: ", err));
+>>>>>>> 9376a9f3d394eba81543ddbe6da9840e61cca44e
